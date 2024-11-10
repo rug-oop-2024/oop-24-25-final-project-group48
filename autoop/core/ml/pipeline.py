@@ -23,7 +23,7 @@ class Pipeline:
                  model: Model,
                  input_features: List[Feature],
                  target_feature: Feature,
-                 split: int=0.8,
+                 split: int = 0.8,
                  ) -> None:
         """
         Initializes the Pipeline.

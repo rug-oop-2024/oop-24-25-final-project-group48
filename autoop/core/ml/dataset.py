@@ -1,7 +1,7 @@
 from autoop.core.ml.artifact import Artifact
-from typing import Any
 import pandas as pd
 import io
+from typing import Tuple, Dict
 
 
 class Dataset(Artifact):
@@ -10,14 +10,15 @@ class Dataset(Artifact):
     and retrieval of datasets.
     """
 
-    def __init__(self, *args: Any, **kwargs: Any) -> None:
+    def __init__(self, *args: Tuple[object],
+                 **kwargs: Dict[str, object]) -> None:
         """
         Initializes a Dataset artifact.
 
         Args:
-            *args (Any): Positional arguments passed to the
+            *args (Tuple[object]): Positional arguments passed to the
             Artifact constructor.
-            **kwargs (Any): Keyword arguments passed to the
+            **kwargs (Dict[str, object]): Keyword arguments passed to the
             Artifact constructor.
         """
         super().__init__(type="dataset", *args, **kwargs)

@@ -8,14 +8,9 @@ from typing import List
 class ArtifactRegistry:
     """
     Manages the registration, retrieval, and deletion of artifacts.
-
-    Attributes:
-        _database (Database): The database instance for storing artifact
-        metadata.
-        _storage (Storage): The storage instance for storing artifact data.
     """
 
-    def __init__(self, database: Database, storage: Storage):
+    def __init__(self, database: Database, storage: Storage) -> None:
         """
         Initializes the ArtifactRegistry with a database and storage system.
 
@@ -26,7 +21,7 @@ class ArtifactRegistry:
         self._database = database
         self._storage = storage
 
-    def register(self, artifact: Artifact):
+    def register(self, artifact: Artifact) -> None:
         """
         Registers a new artifact by saving its data and metadata.
 
@@ -96,7 +91,7 @@ class ArtifactRegistry:
             type=data["type"],
         )
 
-    def delete(self, artifact_id: str):
+    def delete(self, artifact_id: str) -> None:
         """
         Deletes an artifact by its ID.
 
@@ -111,18 +106,11 @@ class ArtifactRegistry:
 class AutoMLSystem:
     """
     A singleton class representing the AutoML system.
-
-    Attributes:
-        _instance (AutoMLSystem): The singleton instance.
-        _storage (LocalStorage): The local storage system.
-        _database (Database): The database system.
-        _registry (ArtifactRegistry): The artifact registry for managing
-        artifacts.
     """
 
     _instance = None
 
-    def __init__(self, storage: LocalStorage, database: Database):
+    def __init__(self, storage: LocalStorage, database: Database) -> None:
         """
         Initializes the AutoML system with storage and database.
 

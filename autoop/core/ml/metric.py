@@ -279,6 +279,12 @@ class MetricHammingLoss(Metric):
     A Metric class for calculating Hamming Loss.
     """
     def __str__(self) -> str:
+        """
+        Prints the name of the Metric.
+
+        Returns:
+            str: Name of the Metric.
+        """
         return 'Hamming Loss'
 
     def evaluate(self, predictions: np.ndarray,

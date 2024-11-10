@@ -6,12 +6,12 @@ from autoop.core.ml.dataset import Dataset
 st.set_page_config(page_title="Datasets", page_icon="📊")
 
 
-def write_helper_text(text: str) -> str:
+def write_helper_text(text: str) -> None:
     """
-    Formatting function.
+    Displays helper text in a styled format using Streamlit.
 
     Args:
-        text (str): Text.
+        text (str): The helper text to be displayed.
     """
     st.write(f"<p style=\"color: #888;\">{text}</p>", unsafe_allow_html=True)
 

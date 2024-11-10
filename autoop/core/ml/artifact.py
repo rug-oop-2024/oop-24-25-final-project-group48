@@ -8,9 +8,10 @@ class Artifact:
     A class for Artifact, and abstract object to refer to an asset
     and its information.
     """
-    def __init__(self, type: str = None, data=None, name: str = None,
-                 asset_path: str = None, version: str = "1.0.0",
-                 tags: list = ['machine_learning'], metadata: dict = {}
+    def __init__(self, type: str = None, data: Optional[bytes] = None,
+                 name: str = None, asset_path: str = None,
+                 version: str = "1.0.0", tags: list = ['machine_learning'],
+                 metadata: dict = {}
                  ) -> None:
         """
         Initializes an Artifact, by creating a dictionary, with all

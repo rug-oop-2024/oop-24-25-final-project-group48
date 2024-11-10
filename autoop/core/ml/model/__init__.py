@@ -1,3 +1,7 @@
+"""
+This package contains ML models.
+"""
+
 from autoop.core.ml.model.model import Model
 from autoop.core.ml.model.regression.elastic_net import ElasticNet
 from autoop.core.ml.model.regression.lasso import Lasso
