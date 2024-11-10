@@ -6,7 +6,13 @@ from autoop.core.ml.dataset import Dataset
 st.set_page_config(page_title="Datasets", page_icon="📊")
 
 
-def write_helper_text(text: str):
+def write_helper_text(text: str) -> str:
+    """
+    Formatting function.
+
+    Args:
+        text (str): Text.
+    """
     st.write(f"<p style=\"color: #888;\">{text}</p>", unsafe_allow_html=True)
 
 
