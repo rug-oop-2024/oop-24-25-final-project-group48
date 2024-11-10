@@ -22,6 +22,9 @@ class NotFoundError(Exception):
 
 
 class Storage(ABC):
+    """
+    Class for storage.
+    """
 
     @abstractmethod
     def save(self, data: bytes, path: str) -> None:

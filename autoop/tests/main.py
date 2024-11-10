@@ -1,3 +1,6 @@
+"""
+Authors: Daniella Alves (S5492890), Lam Anh Nguyen (S5622743)
+"""
 import unittest
 from autoop.tests.test_database import TestDatabase
 from autoop.tests.test_storage import TestStorage
@@ -11,7 +14,7 @@ from autoop.tests.test_metrics import TestAccuracy, TestMAE, TestMCC, \
     TestMSE, TestRMSE, TestSpecificity
 from autoop.tests.test_ridge import TestRidge
 from autoop.tests.test_sgd import TestSGD
-from autoop.tests.test_svc import TestSVC
+from autoop.tests.test_decision_tree import TestDecisionTree
 
 TestDatabase()
 TestStorage()
@@ -29,7 +32,7 @@ TestRMSE()
 TestSpecificity()
 TestRidge()
 TestSGD()
-TestSVC()
+TestDecisionTree()
 
 if __name__ == '__main__':
     unittest.main()
