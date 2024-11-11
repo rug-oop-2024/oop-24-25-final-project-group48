@@ -128,8 +128,8 @@ if uploaded_file and selected_pipeline:
                 elif task_type == "classification":
                     model_choice = str(st.selectbox("Select a model:",
                                                     deepcopy(
-                                                        CLASSIFICATION_MODELS
-                                                        )))
+                                                        CLASSIFICATION_MODELS))
+                                       )
 
                 st.subheader("Pipeline")
 
