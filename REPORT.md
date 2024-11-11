@@ -44,3 +44,9 @@ AUTOOP
                 are returned as deepcopies.
                 - Getters are implemented as concrete methods, identical across all subclasses, to avoid
                 redundancy.
+
+To make our files run, specifically our streamlit app, we had to use the command 
+"""
+import sys
+sys.path.append('/home/de1na/final_project/oop-24-25-final-project-group48')
+"""
